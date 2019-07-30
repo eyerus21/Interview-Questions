@@ -1,7 +1,8 @@
 import java.utill.*;
  public class QueueUsingTwoStacks{
  	static class Queue{
- 		static Stack<Double>S1.S2 = new Stack<Double>();
+ 		static Stack<Double>S1 = new Stack<Double>();
+	        static Stack<Double>S2 = new Stack<Double>();
  		static void enqueue(int a){
 
  //move all elements from s1 to s2
@@ -10,7 +11,7 @@ import java.utill.*;
       S2.push(s1.pop());//s1.pop
 	  }
 //push item into s1
-   S1.push(x);
+   S1.push(a);
 //push everything back to s1
    while(!S2.isempty())
    { 
@@ -29,9 +30,9 @@ import java.utill.*;
           	System.exit(0);
           }
        //return top of s1
-          int x=S1.peek();
+          int a=S1.peek();
           S1.pop();
-          return x;
+          return a;
    }
  }
 
@@ -41,8 +42,8 @@ import java.utill.*;
 {   
 	Queue q=new Queue();
 	q.enqueue(1);
-    q.enqueue(2);
-    q.enqueue(3
+        q.enqueue(2);
+        q.enqueue(3);
 
     System.out.println(q.enqueue());
     System.out.println(q.enqueue());
