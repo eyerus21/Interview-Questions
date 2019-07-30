@@ -36,8 +36,7 @@ import java.utill.*;
    }
  }
 
-};
-     //driver code
+}; 
      public static void main(String[]args)
 {   
 	Queue q=new Queue();
